@@ -353,20 +353,6 @@
  	\end{figure}
 \end{frame}
 
-\begin{frame}
- 	\begin{figure}[htbp]
- 		\centerline{\includegraphics[scale=1.2]{images/5b.pdf}}
- 		\caption[]{}
- 	\end{figure}
-\end{frame}
-
-\begin{frame}
- 	\begin{figure}[htbp]
- 		\centerline{\includegraphics[scale=1.2]{images/5c.pdf}}
- 		\caption[]{}
- 	\end{figure}
-\end{frame}
-
 \section[Challenges and Future Directions]{Challenges and Future Directions}
 
 \begin{frame}
