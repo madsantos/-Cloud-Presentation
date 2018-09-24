@@ -140,9 +140,12 @@
 	\frametitle{Introduction}
  	\begin{block}{}
  		\begin{itemize}
- 			\item With new levels of computing capacity provides by Fog computing, new forms of resource allocation and management can be developed;
+ 			\item[•] With new levels of computing capacity provides by Fog computing, new forms of resource allocation and management can be developed;
  			\newline
- 		    \item The grow of the number of devices scattered and connected to Internet, producing and consuming data, requires a scalable resource management at unprecedented levels - focus on IoT.
+ 		    \item[•] The grow of the number of devices scattered and connected to Internet, producing and consuming data, requires a scalable resource management at unprecedented levels
+ 		    \begin{itemize}
+ 		    	\item[-] \footnotesize\textit{Focus on IoT}
+			\end{itemize}
  		\end{itemize}
  	\end{block}
 \end{frame}
@@ -151,26 +154,17 @@
 	\frametitle{Introduction}
  	\begin{block}{}
  		\begin{itemize}
- 			\item Data also are produced at the edge. Data generation and consumption can occur at many differents places and times;
+ 			\item[•] Data also are produced at the edge. Data generation and consumption can occur at many differents places and times;
  			\newline
- 		    \item Different applications can have different requirements, especially in terms of response time;
- 		    \newline
- 		    \item 
+ 		    \item[•] Different applications can have different requirements, especially in terms of response time.
  		\end{itemize}
  	\end{block}
 \end{frame}
 
-%\begin{frame}
-% 	\begin{figure}[htbp]
-% 		\centerline{\includegraphics[scale=0.27]{images/CSBv2.png}}
-% 		\caption[An Overview of the Cloud Broker Service]{An Overview of the Cloud Broker Service}
-% 	\end{figure}
-%\end{frame}
-
 \begin{frame}
 	\frametitle{Introduction}
  	\begin{block}{The problem}
- 			\textit{Resource allocation considering the hierarchical infrastructure composed of edge capacity and cloud data centers, analyzing application classes along with different scheduling policies.}
+ 			\textit{\newline \textbf{Resource allocation considering the hierarchical infrastructure composed of edge capacity and cloud data centers, analyzing application classes along with different scheduling policies.}\newline}
  	\end{block}
 \end{frame}
 
@@ -182,65 +176,58 @@
 
 \begin{frame}
 	\frametitle{Fog Computing Model}
-% 	\begin{block}{}
-% 		\begin{itemize}
-% 		    \item[•] Suporte para vários atributos de QoS
-% 		    	\begin{itemize}
-% 		    		\item[-] \footnotesize\textit{disponibilidade, segurança, desempenho, escalabilidade, confiabilidade}
-% 		    	\end{itemize}
-% 		    \item
-% 		    \item[•] Reconhecimento de violação de SLA
-% 		    	\begin{itemize}
-% 		    		\item[-] \footnotesize\textit{identificar violações, tomar as medidas adequadas e compensar prejuízos acumulados.}
-% 		    	\end{itemize}
-% 		    \item
-% 		    \item[•] Otimização de preços:
-% 		    	\begin{itemize}
-% 		    		\item[-] \footnotesize\textit{vial na decisão, os CSBs devem considerar importante na seleção.}
-% 		    	\end{itemize}
-% 		\end{itemize}
-% 	\end{block}
+ 	\begin{block}{}
+ 		\begin{itemize}
+ 		    \item[•] User applications that access the public cloud do so through an access point that allows data exchange through the core network to reach the cloud data center;\newline
+ 		    \item[•] \emph{Cloudlet}: access point extended to also provide computing and storage services.
+ 		\end{itemize}
+ 	\end{block}
+\end{frame}
+
+\begin{frame}
+ 	\begin{figure}[htbp]
+ 		\centerline{\includegraphics[scale=1]{images/fog.pdf}}
+ 		\caption[Fog computing: cloud, cloudlets and edge devices/applications ecosystem]{Fog computing: cloud, cloudlets and edge devices/applications ecosystem}
+ 	\end{figure}
 \end{frame}
 
 \begin{frame}
 	\frametitle{Fog Computing Model}
-% 	\begin{block}{}
-% 		\begin{itemize}
-% 		    \item[•] Seleção de fornecedores adequados para diferentes tipos de
-% serviços na nuvem
-% 				\begin{itemize}
-% 		    		\item[-] \footnotesize\textit{everything as a service (XaaS); o CSB deve conhecer e pesquisar em todos}
-% 		    	\end{itemize}
-% 		    \item
-% 		    \item[•] Perfil do cliente
-% 		    	\begin{itemize}
-% 		    		\item[-] \footnotesize\textit{problema de pesquisa: perfil ou histórico de solicitações acelera o processo }
-% 		    	\end{itemize}
-% 		    \item
-% 		    \item[•] Corretagem dinâmica
-% 		    	\begin{itemize}
-% 		    		\item[-] \footnotesize\textit{O CSB deve selecionar o melhor serviço em função da dinâmica}
-% 		    	\end{itemize} 
-% 		\end{itemize}
-% 	\end{block}
+ 	\begin{block}{}
+ 		\begin{itemize}
+ 		     \item[•] Hierarchical, bi-directional computing infrastructure: edge devices communicate with cloudlets and cloudlets communicate with clouds.\newline
+ 		    	\begin{itemize}
+ 		    		\item[-] \footnotesize\textit{Cloudlets can also communicate with each other to perform data and process management.}
+ 		    	\end{itemize}
+ 		\end{itemize}
+ 	\end{block}
 \end{frame}
 
 \begin{frame}
 	\frametitle{Fog Computing Model}
-% 	\begin{block}{}
-% 		\begin{itemize}
-% 		    \item[•] Pedido parcial de informação sobre especificação de serviços
-% dos clientes
-% 				\begin{itemize}
-% 		    		\item[-] \footnotesize\textit{os CSBs devem mediar entre os provedores e clientes menos profissionais}
-% 		    	\end{itemize}
-% 		    \item
-% 		    \item[•] Priorização de preferência do cliente
-% 		    	\begin{itemize}
-% 		    		\item[-] \footnotesize\textit{as prioridades dos clientes devem ser consideradas na seleção dos serviços}
-% 		    	\end{itemize}
-% 		\end{itemize}
-% 	\end{block}
+ 	\begin{block}{}
+ 		\begin{itemize}
+ 		     \item[•] Processing and storage capacity in fog computing can benefit different types of applications\newline
+ 		    	\begin{itemize}
+ 		    		\item[-] \footnotesize\textit{Applications with low latency requirements;}\newline
+ 		    		\item[-] \footnotesize\textit{Applications that currently rely on the cloud;}\newline
+ 		    		\item[-] \footnotesize\textit{Cases in which raw data collected by many devices that generally do not need to be transferred to the cloud for long-term storage.}
+ 		    	\end{itemize}
+ 		\end{itemize}
+ 	\end{block}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Fog Computing Model}
+ 	\begin{block}{}
+ 		\begin{itemize}
+ 		     \item[•] Cloudlets can provide reduced latencies, however...\newline
+ 		    	\begin{itemize}
+ 		    		\item[-] \footnotesize\textit{New challenges: \textbf{what}, \textbf{when} and \textbf{where} carry out processing to meet QoS;}\newline
+ 		    		\item[-] \footnotesize\textit{Fog scheduling must bring users location to the resource allocation policies to uphold the benefits of proximity to the user.}
+ 		    	\end{itemize}
+ 		\end{itemize}
+ 	\end{block}
 \end{frame}
 
 \section[Related Work]{Related Work}
@@ -310,6 +297,23 @@
 % 		    	\end{itemize}
 % 		\end{itemize}
 % 	\end{block}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Applications}
+ 	\begin{block}{}
+ 		\begin{itemize}
+ 		    \item[•] The fog architecture is hierarchical, where the decision is subject to application constraints and user geo-location
+ 				\begin{itemize}
+ 		    		\item[-] \footnotesize\textit{Application constraints;}
+ 		    	\end{itemize}
+ 		    \item
+ 		    \item[•] 
+ 		    	\begin{itemize}
+ 		    		\item[-] \footnotesize\textit{;}
+ 		    	\end{itemize}
+ 		\end{itemize}
+ 	\end{block}
 \end{frame}
 
 \begin{frame}
