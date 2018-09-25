@@ -89,6 +89,8 @@
 % Ativa ou desativa as anotações
 \setbeameroption{hide notes}
 %\setbeameroption{show notes}
+% Ativa númeração de figuras
+\setbeamertemplate{caption}[numbered]
 
 %==================================================================================
 
@@ -284,23 +286,6 @@
 
 \begin{frame}
 	\frametitle{Applications}
-% 	\begin{block}{}
-% 		\begin{itemize}
-% 		    \item[•] Não há suporte para vários modelos de serviço em nuvem:
-% 				\begin{itemize}
-% 		    		\item[-] \footnotesize\textit{o CSB deve ser capaz de encontrar provedores adequados para todos os tipos de serviço}
-% 		    	\end{itemize}
-% 		    \item
-% 		    \item[•] Nenhum suporte desejável para atributos de QoS
-% 		    	\begin{itemize}
-% 		    		\item[-] \footnotesize\textit{o CSB deve suportar todos os atributos de QoS no momento da seleção do serviço}
-% 		    	\end{itemize}
-% 		\end{itemize}
-% 	\end{block}
-\end{frame}
-
-\begin{frame}
-	\frametitle{Applications}
  	\begin{block}{}
  		\begin{itemize}
  		    \item[•] The fog architecture is hierarchical, where the decision is subject to application constraints and user geo-location\newline
@@ -319,19 +304,63 @@
  		\begin{itemize}
  		    \item[•] Considering geo-location and different application classes, were identified two types of apps:\newline
  				\begin{itemize}
- 		    		\item[-] \footnotesize\textit{Near real-time;}\newline
- 		    		\item[-] \footnotesize\textit{Delay-tolerant.}
+ 		    		\item[-] \footnotesize\textit{Near real-time: EEGTBG game;}\newline
+ 		    		\item[-] \footnotesize\textit{Delay-tolerant: VSOT application.}
  		    	\end{itemize}
  		\end{itemize}
  	\end{block}
 \end{frame}
 
 \begin{frame}
-
+ 	\begin{figure}[htbp]
+ 		\centerline{\includegraphics[scale=0.9]{images/apps.pdf}}
+ 		\caption[Example applications and their modules]{Example applications and their modules}
+ 	\end{figure}
 \end{frame}
 
 \begin{frame}
+	\frametitle{Applications}
+ 	\begin{block}{}
+ 		\begin{itemize}
+ 		    \item[•] Electroencephalography tractor beam game (EEGTBG):\newline
+ 				\begin{itemize}
+ 		    		\item[-] \footnotesize\textit{Players try to gather items by concentrating on them. A player that has a better concentration on an item can attract it towards him/herself;}\newline
+ 		    		\item[-] \footnotesize\textit{Fast processing and low response times achieved by edge computing devices can give players a true online, real-time experience.}
+ 		    	\end{itemize}
+ 		\end{itemize}
+ 	\end{block}
+\end{frame}
 
+\begin{frame}
+	\frametitle{Applications}
+ 	\begin{block}{}
+ 		\begin{itemize}
+ 		    \item[•] Video surveillance/object tracking application (VSOT):\newline
+ 				\begin{itemize}
+ 		    		\item[-] \footnotesize\textit{Set of distributed intelligent cameras that are able to track movement, having 6 modules: camera, motion detector, object detector, object tracker, user interface, and pan, tilt, and zoom (PTZ) control.}\newline
+ 		    	\end{itemize}
+ 		\end{itemize}
+ 	\end{block}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Applications}
+ 	\begin{block}{}
+ 		\begin{itemize}
+ 		    \item[•] EEGTBG (delay-sensitive) and VSOT (delay-tolerant) can be set up in a fog to take advantage of low latency due to the use of cloudlets\newline
+ 				\begin{itemize}
+ 		    		\item[-] \footnotesize\textit{VSOT is able to work under data center-distance latencies >100 miliseconds;}\newline
+ 		    		\item[-] \footnotesize\textit{In EEGTBG, higher delays can impact the players real-time perception, making the game unreal and impairing its playability.}
+ 		    	\end{itemize}
+ 		\end{itemize}
+ 	\end{block}
+\end{frame}
+
+\begin{frame}
+ 	\begin{figure}[htbp]
+ 		\centerline{\includegraphics[scale=0.9]{images/mobility.pdf}}
+ 		\caption[Mobility scenario: mobile concentration game users electroencephalography tractor beam game (EEGTBG) move and compete for the same cloudlet resources with existing surveillance (VSOT) application]{Mobility scenario: mobile concentration game users electroencephalography tractor beam game (EEGTBG) move and compete for the same cloudlet resources with existing surveillance (VSOT) application}
+ 	\end{figure}
 \end{frame}
 
 \section[Allocation Policies]{Allocation Policies}
